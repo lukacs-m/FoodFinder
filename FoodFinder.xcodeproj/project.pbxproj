@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		B85FF8C32624B1E00035BDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85FF8C22624B1E00035BDBD /* Preview Assets.xcassets */; };
 		B85FF8CE2624B1E00035BDBD /* FoodFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8CD2624B1E00035BDBD /* FoodFinderTests.swift */; };
 		B85FF8D92624B1E00035BDBD /* FoodFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8D82624B1E00035BDBD /* FoodFinderUITests.swift */; };
+		B85FF8F02624B54B0035BDBD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF8EF2624B54B0035BDBD /* Networking */; };
+		B85FF8F62624B5720035BDBD /* SwiftUICombineToolBox in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF8F52624B5720035BDBD /* SwiftUICombineToolBox */; };
+		B85FF8FC2624B58C0035BDBD /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF8FB2624B58C0035BDBD /* Resolver */; };
+		B85FF9022624B5CF0035BDBD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF9012624B5CF0035BDBD /* Kingfisher */; };
+		B85FF91E2624B6B90035BDBD /* Tools+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9192624B6B90035BDBD /* Tools+Dependencies.swift */; };
+		B85FF91F2624B6B90035BDBD /* Routing+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91A2624B6B90035BDBD /* Routing+Dependencies.swift */; };
+		B85FF9202624B6B90035BDBD /* ViewModels+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91B2624B6B90035BDBD /* ViewModels+Dependencies.swift */; };
+		B85FF9212624B6B90035BDBD /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91C2624B6B90035BDBD /* Repositories+Dependencies.swift */; };
+		B85FF9222624B6B90035BDBD /* DependenciesRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91D2624B6B90035BDBD /* DependenciesRegistration.swift */; };
+		B85FF92B2624B7000035BDBD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF92A2624B7000035BDBD /* MainRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +55,12 @@
 		B85FF8D42624B1E00035BDBD /* FoodFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85FF8D82624B1E00035BDBD /* FoodFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderUITests.swift; sourceTree = "<group>"; };
 		B85FF8DA2624B1E00035BDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85FF9192624B6B90035BDBD /* Tools+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tools+Dependencies.swift"; sourceTree = "<group>"; };
+		B85FF91A2624B6B90035BDBD /* Routing+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routing+Dependencies.swift"; sourceTree = "<group>"; };
+		B85FF91B2624B6B90035BDBD /* ViewModels+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels+Dependencies.swift"; sourceTree = "<group>"; };
+		B85FF91C2624B6B90035BDBD /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
+		B85FF91D2624B6B90035BDBD /* DependenciesRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesRegistration.swift; sourceTree = "<group>"; };
+		B85FF92A2624B7000035BDBD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85FF9022624B5CF0035BDBD /* Kingfisher in Frameworks */,
+				B85FF8FC2624B58C0035BDBD /* Resolver in Frameworks */,
+				B85FF8F62624B5720035BDBD /* SwiftUICombineToolBox in Frameworks */,
+				B85FF8F02624B54B0035BDBD /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +115,10 @@
 		B85FF8BA2624B1DF0035BDBD /* FoodFinder */ = {
 			isa = PBXGroup;
 			children = (
-				B85FF8BB2624B1DF0035BDBD /* FoodFinderApp.swift */,
-				B85FF8BD2624B1DF0035BDBD /* ContentView.swift */,
-				B85FF8BF2624B1E00035BDBD /* Assets.xcassets */,
-				B85FF8C42624B1E00035BDBD /* Info.plist */,
-				B85FF8C12624B1E00035BDBD /* Preview Content */,
+				B85FF9092624B5FD0035BDBD /* App */,
+				B85FF9172624B6900035BDBD /* AppManagement */,
+				B85FF9322624B71E0035BDBD /* Common */,
+				B85FF9332624B7300035BDBD /* Scenes */,
 			);
 			path = FoodFinder;
 			sourceTree = "<group>";
@@ -130,6 +149,77 @@
 			path = FoodFinderUITests;
 			sourceTree = "<group>";
 		};
+		B85FF9092624B5FD0035BDBD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF8C42624B1E00035BDBD /* Info.plist */,
+				B85FF8BB2624B1DF0035BDBD /* FoodFinderApp.swift */,
+				B85FF8C12624B1E00035BDBD /* Preview Content */,
+				B85FF90D2624B6110035BDBD /* Ressources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B85FF90D2624B6110035BDBD /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF8BF2624B1E00035BDBD /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		B85FF9172624B6900035BDBD /* AppManagement */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9292624B6CA0035BDBD /* Routing */,
+				B85FF9182624B69A0035BDBD /* DependencyInjector */,
+			);
+			path = AppManagement;
+			sourceTree = "<group>";
+		};
+		B85FF9182624B69A0035BDBD /* DependencyInjector */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9192624B6B90035BDBD /* Tools+Dependencies.swift */,
+				B85FF91A2624B6B90035BDBD /* Routing+Dependencies.swift */,
+				B85FF91B2624B6B90035BDBD /* ViewModels+Dependencies.swift */,
+				B85FF91C2624B6B90035BDBD /* Repositories+Dependencies.swift */,
+				B85FF91D2624B6B90035BDBD /* DependenciesRegistration.swift */,
+			);
+			path = DependencyInjector;
+			sourceTree = "<group>";
+		};
+		B85FF9292624B6CA0035BDBD /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF92A2624B7000035BDBD /* MainRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		B85FF9322624B71E0035BDBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B85FF9332624B7300035BDBD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9342624B7920035BDBD /* HomeMap */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B85FF9342624B7920035BDBD /* HomeMap */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF8BD2624B1DF0035BDBD /* ContentView.swift */,
+			);
+			path = HomeMap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,15 +227,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85FF8DD2624B1E00035BDBD /* Build configuration list for PBXNativeTarget "FoodFinder" */;
 			buildPhases = (
+				B85FF8E92624B36B0035BDBD /* SwiftLint */,
 				B85FF8B42624B1DF0035BDBD /* Sources */,
 				B85FF8B52624B1DF0035BDBD /* Frameworks */,
 				B85FF8B62624B1DF0035BDBD /* Resources */,
+				B85FF8EA2624B3DC0035BDBD /* Run SwiftFormat */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FoodFinder;
+			packageProductDependencies = (
+				B85FF8EF2624B54B0035BDBD /* Networking */,
+				B85FF8F52624B5720035BDBD /* SwiftUICombineToolBox */,
+				B85FF8FB2624B58C0035BDBD /* Resolver */,
+				B85FF9012624B5CF0035BDBD /* Kingfisher */,
+			);
 			productName = FoodFinder;
 			productReference = B85FF8B82624B1DF0035BDBD /* FoodFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +315,12 @@
 				Base,
 			);
 			mainGroup = B85FF8AF2624B1DF0035BDBD;
+			packageReferences = (
+				B85FF8EE2624B54B0035BDBD /* XCRemoteSwiftPackageReference "Networking" */,
+				B85FF8F42624B5720035BDBD /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */,
+				B85FF8FA2624B58C0035BDBD /* XCRemoteSwiftPackageReference "Resolver" */,
+				B85FF9002624B5CF0035BDBD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B85FF8B92624B1DF0035BDBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,13 +358,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B85FF8E92624B36B0035BDBD /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# This path need to be set for mac M1 new homebrew install location\nPATH=/opt/homebrew/bin/:$PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B85FF8EA2624B3DC0035BDBD /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# This path need to be set for mac M1 new homebrew install location\nPATH=/opt/homebrew/bin/:$PATH\n\nif which swiftformat >/dev/null; then\nswiftformat .\nelse\necho \"error: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nexit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B85FF8B42624B1DF0035BDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B85FF8BE2624B1DF0035BDBD /* ContentView.swift in Sources */,
+				B85FF92B2624B7000035BDBD /* MainRouter.swift in Sources */,
 				B85FF8BC2624B1DF0035BDBD /* FoodFinderApp.swift in Sources */,
+				B85FF91E2624B6B90035BDBD /* Tools+Dependencies.swift in Sources */,
+				B85FF91F2624B6B90035BDBD /* Routing+Dependencies.swift in Sources */,
+				B85FF9212624B6B90035BDBD /* Repositories+Dependencies.swift in Sources */,
+				B85FF9202624B6B90035BDBD /* ViewModels+Dependencies.swift in Sources */,
+				B85FF9222624B6B90035BDBD /* DependenciesRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +567,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoodFinder/Info.plist;
+				INFOPLIST_FILE = FoodFinder/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,9 +588,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FoodFinder/Info.plist;
+				INFOPLIST_FILE = FoodFinder/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +723,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B85FF8EE2624B54B0035BDBD /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Networking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+		B85FF8F42624B5720035BDBD /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukacs-m/SwiftUICombineToolBox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.11;
+			};
+		};
+		B85FF8FA2624B58C0035BDBD /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+		B85FF9002624B5CF0035BDBD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B85FF8EF2624B54B0035BDBD /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85FF8EE2624B54B0035BDBD /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+		B85FF8F52624B5720035BDBD /* SwiftUICombineToolBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85FF8F42624B5720035BDBD /* XCRemoteSwiftPackageReference "SwiftUICombineToolBox" */;
+			productName = SwiftUICombineToolBox;
+		};
+		B85FF8FB2624B58C0035BDBD /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85FF8FA2624B58C0035BDBD /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		B85FF9012624B5CF0035BDBD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B85FF9002624B5CF0035BDBD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B85FF8B02624B1DF0035BDBD /* Project object */;
 }
