@@ -30,6 +30,19 @@
 		B85FF97D2626EF290035BDBD /* Resolver+XCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF97C2626EF290035BDBD /* Resolver+XCTests.swift */; };
 		B85FF984262715DD0035BDBD /* HomeMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */; };
 		B85FF99526271BA20035BDBD /* LocationRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */; };
+		B85FF9A1262736B50035BDBD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9A0262736B50035BDBD /* API.swift */; };
+		B85FF9A9262736DA0035BDBD /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9A8262736DA0035BDBD /* APIConfig.swift */; };
+		B85FF9AE262738E50035BDBD /* FoodFinder-Infos.plist in Resources */ = {isa = PBXBuildFile; fileRef = B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */; };
+		B85FF9B32627629E0035BDBD /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9B22627629E0035BDBD /* VenueAPI.swift */; };
+		B85FF9B9262786C30035BDBD /* RecommandedVenueAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */; };
+		B85FF9C12627892B0035BDBD /* BasicVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9C02627892B0035BDBD /* BasicVenue.swift */; };
+		B85FF9C62627897E0035BDBD /* VenueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9C52627897E0035BDBD /* VenueRepository.swift */; };
+		B85FF9CF26284B040035BDBD /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */; };
+		B85FF9DB26284E6E0035BDBD /* MapVenueAnnotable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */; };
+		B85FF9E126284EBC0035BDBD /* VenueTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */; };
+		B85FF9F22628F4F70035BDBD /* DetailVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9F12628F4F70035BDBD /* DetailVenue.swift */; };
+		B85FF9FD26297F920035BDBD /* UIStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9FC26297F920035BDBD /* UIStyles.swift */; };
+		B85FFA062629A8FE0035BDBD /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA052629A8FE0035BDBD /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +88,19 @@
 		B85FF97C2626EF290035BDBD /* Resolver+XCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+XCTests.swift"; sourceTree = "<group>"; };
 		B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewModelTests.swift; sourceTree = "<group>"; };
 		B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryMock.swift; sourceTree = "<group>"; };
+		B85FF9A0262736B50035BDBD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B85FF9A8262736DA0035BDBD /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoodFinder-Infos.plist"; sourceTree = "<group>"; };
+		B85FF9B22627629E0035BDBD /* VenueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
+		B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandedVenueAPIResponse.swift; sourceTree = "<group>"; };
+		B85FF9C02627892B0035BDBD /* BasicVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVenue.swift; sourceTree = "<group>"; };
+		B85FF9C52627897E0035BDBD /* VenueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepository.swift; sourceTree = "<group>"; };
+		B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVenueAnnotable.swift; sourceTree = "<group>"; };
+		B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTypeFactory.swift; sourceTree = "<group>"; };
+		B85FF9F12628F4F70035BDBD /* DetailVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenue.swift; sourceTree = "<group>"; };
+		B85FF9FC26297F920035BDBD /* UIStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyles.swift; sourceTree = "<group>"; };
+		B85FFA052629A8FE0035BDBD /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +242,9 @@
 		B85FF9322624B71E0035BDBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B85FF9CD26284AEA0035BDBD /* Extensions */,
+				B85FF9B7262786A50035BDBD /* Models */,
+				B85FF99F262736A60035BDBD /* Tools */,
 				B85FF96726260B800035BDBD /* Configs */,
 				B85FF9532625EE530035BDBD /* UIComponent */,
 				B85FF9382624BD550035BDBD /* Repositories */,
@@ -244,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				B85FF9392624BD720035BDBD /* LocationRepository.swift */,
+				B85FF9C52627897E0035BDBD /* VenueRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -252,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				B85FF95F2625EEAC0035BDBD /* FoodFinderProgressView.swift */,
+				B85FF9FC26297F920035BDBD /* UIStyles.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -311,6 +342,62 @@
 				B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */,
 			);
 			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		B85FF99F262736A60035BDBD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA042629A8EF0035BDBD /* Cache */,
+				B85FF9DF26284E9F0035BDBD /* Factories */,
+				B85FF9D626284C160035BDBD /* API */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B85FF9B7262786A50035BDBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */,
+				B85FF9C02627892B0035BDBD /* BasicVenue.swift */,
+				B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */,
+				B85FF9F12628F4F70035BDBD /* DetailVenue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B85FF9CD26284AEA0035BDBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B85FF9D626284C160035BDBD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9A8262736DA0035BDBD /* APIConfig.swift */,
+				B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */,
+				B85FF9B22627629E0035BDBD /* VenueAPI.swift */,
+				B85FF9A0262736B50035BDBD /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B85FF9DF26284E9F0035BDBD /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		B85FFA042629A8EF0035BDBD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA052629A8FE0035BDBD /* Cache.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +519,7 @@
 			files = (
 				B85FF8C32624B1E00035BDBD /* Preview Assets.xcassets in Resources */,
 				B85FF8C02624B1E00035BDBD /* Assets.xcassets in Resources */,
+				B85FF9AE262738E50035BDBD /* FoodFinder-Infos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,15 +583,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85FF9DB26284E6E0035BDBD /* MapVenueAnnotable.swift in Sources */,
+				B85FF9F22628F4F70035BDBD /* DetailVenue.swift in Sources */,
 				B85FF92B2624B7000035BDBD /* MainRouter.swift in Sources */,
+				B85FF9C12627892B0035BDBD /* BasicVenue.swift in Sources */,
 				B85FF8BC2624B1DF0035BDBD /* FoodFinderApp.swift in Sources */,
 				B85FF93A2624BD720035BDBD /* LocationRepository.swift in Sources */,
 				B85FF91E2624B6B90035BDBD /* Tools+Dependencies.swift in Sources */,
 				B85FF91F2624B6B90035BDBD /* Routing+Dependencies.swift in Sources */,
+				B85FF9E126284EBC0035BDBD /* VenueTypeFactory.swift in Sources */,
 				B85FF946262591410035BDBD /* HomeMapView.swift in Sources */,
+				B85FF9A9262736DA0035BDBD /* APIConfig.swift in Sources */,
 				B85FF9602625EEAC0035BDBD /* FoodFinderProgressView.swift in Sources */,
 				B85FF947262591410035BDBD /* HomeMapViewModel.swift in Sources */,
+				B85FF9A1262736B50035BDBD /* API.swift in Sources */,
+				B85FF9C62627897E0035BDBD /* VenueRepository.swift in Sources */,
+				B85FF9CF26284B040035BDBD /* MKCoordinateRegion+Extensions.swift in Sources */,
 				B85FF9212624B6B90035BDBD /* Repositories+Dependencies.swift in Sources */,
+				B85FF9B32627629E0035BDBD /* VenueAPI.swift in Sources */,
+				B85FF9FD26297F920035BDBD /* UIStyles.swift in Sources */,
+				B85FF9B9262786C30035BDBD /* RecommandedVenueAPIResponse.swift in Sources */,
+				B85FFA062629A8FE0035BDBD /* Cache.swift in Sources */,
 				B85FF9202624B6B90035BDBD /* ViewModels+Dependencies.swift in Sources */,
 				B85FF9222624B6B90035BDBD /* DependenciesRegistration.swift in Sources */,
 				B85FF96926260B920035BDBD /* GeneralConfiguration.swift in Sources */,

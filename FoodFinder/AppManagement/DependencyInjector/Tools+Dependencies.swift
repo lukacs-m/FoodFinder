@@ -12,6 +12,9 @@ import Resolver
 
 extension Resolver {
     public static func registerTools() {
-        // register you tools
+        register { API() }
+            .implements(VenueAPIContract.self)
+            .scope(.application)
+        register { Cache<String, Any>() }
     }
 }
