@@ -15,28 +15,26 @@ protocol VenueRepositoryContract {
     func getRecommended<ReturnType: BasicVenueContract>(ofType: ReturnType.Type,
                                                         for location: CLLocationCoordinate2D,
                                                         with radius: Int) -> AnyPublisher<[ReturnType], Never>
-    
+
     func getDetails<ReturnType: DetailVenueContract>(ofType type: ReturnType.Type,
-                                                     for mapAnnotation: MapVenueAnnotable) -> AnyPublisher<ReturnType?, Never>
+                                                     for mapAnnotation: MapVenueAnnotion) -> AnyPublisher<ReturnType?, Never>
 }
 
 final class VenueRepository: VenueRepositoryContract {
     @Injected private var api: VenueAPIContract
-    private let cache: Cache<String, DetailVenueContract>
+    @Injected var cache: Cache<String, DetailVenueContract>
     private var cancelBag = CancelBag()
-    
-    init(cache: Cache<String, DetailVenueContract>) {
-        self.cache = cache
-    }
-    
+
+    init() {}
+
     func getRecommended<ReturnType: BasicVenueContract>(ofType: ReturnType.Type,
                                                         for location: CLLocationCoordinate2D,
                                                         with radius: Int) -> AnyPublisher<[ReturnType], Never> {
         let correctRadius = radius < APIConfig.maxRadius ? radius : APIConfig.maxRadius
-        
+
         let params = buildParams(for: location, type: .food, and: correctRadius)
         let path = APIConfig.recommendedVenueEndpoint
-        
+
         return api.getData(ofKind: RecommandedVenueAPIResponse.self, from: path, with: params)
             .map { [weak self] results -> [ReturnType] in
                 guard let self = self,
@@ -47,15 +45,15 @@ final class VenueRepository: VenueRepositoryContract {
             }.replaceError(with: [ReturnType]())
             .eraseToAnyPublisher()
     }
-    
+
     func getDetails<ReturnType: DetailVenueContract>(ofType type: ReturnType.Type,
-                                                     for mapAnnotation: MapVenueAnnotable) -> AnyPublisher<ReturnType?, Never> {
+                                                     for mapAnnotation: MapVenueAnnotion) -> AnyPublisher<ReturnType?, Never> {
         if let detailVenue = cache[mapAnnotation.id] as? ReturnType {
             return Just(detailVenue).eraseToAnyPublisher()
         }
         let params = APIConfig.basicParams
         let path = "\(APIConfig.detailVenueEndpoint)/\(mapAnnotation.id)"
-        
+
         return api.getData(ofKind: DetailVenueAPIResponse.self, from: path, with: params)
             .map { [weak self] results -> ReturnType? in
                 guard let self = self,
@@ -79,11 +77,11 @@ extension VenueRepository {
         params["radius"] = radius
         return params
     }
-    
+
     private func parseVenues(from recommandedResponse: BasicVenueProdiderContract) -> [BasicVenueContract] {
         recommandedResponse.getBasicVenues()
     }
-    
+
     private func parseDetail(from detailVenueResponse: DetailVenueProviderContract) -> DetailVenueContract {
         detailVenueResponse.getDetailVenue()
     }

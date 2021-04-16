@@ -8,10 +8,10 @@
 import CoreLocation
 
 struct VenueFactory {
-    static func createMapVenueAnnotable(from venue: BasicVenueContract) -> MapVenueAnnotable {
+    static func createMapVenueAnnotable(from venue: BasicVenueContract) -> MapVenueAnnotion {
         let type = venue.categories.first?.name ?? ""
         let coorDinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
 
-        return MapVenueAnnotable(id: venue.id, name: venue.name, type: type, coordinate: coorDinate)
+        return MapVenueAnnotion(id: venue.id, name: venue.name, type: type, coordinate: coorDinate)
     }
 }

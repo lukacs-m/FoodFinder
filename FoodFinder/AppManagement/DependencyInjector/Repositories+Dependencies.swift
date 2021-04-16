@@ -13,6 +13,6 @@ import Resolver
 extension Resolver {
     public static func registerRepositories() {
         register { LocationsRepository() as LocationsRepositoryContract }.scope(.application)
-        register { VenueRepository(cache: Cache()) as VenueRepositoryContract }.scope(.application)
+        register { VenueRepository() as VenueRepositoryContract }.scope(.application)
     }
 }

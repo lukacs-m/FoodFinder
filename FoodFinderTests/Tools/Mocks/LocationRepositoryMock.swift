@@ -29,6 +29,9 @@ final class LocationsRepositoryMock: LocationsRepositoryContract {
     var permissionDenied: CurrentValueSubject<Bool, Never> = .init(false)
     
     func checkLocationAuthorization() {
-        currentLocation.send(TestConfig.testLocation)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.currentLocation
+                .send(TestConfig.testLocation)
+        }
     }
 }

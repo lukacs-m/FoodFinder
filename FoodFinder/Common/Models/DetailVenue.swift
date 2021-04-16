@@ -7,7 +7,9 @@
 
 import Networking
 
-protocol DetailVenueContract {}
+protocol DetailVenueContract {
+    var id: String { get }
+}
 
 protocol DetailVenueProviderContract {
     func getDetailVenue() -> DetailVenueContract
@@ -35,19 +37,18 @@ extension DetailVenueResponse: NetworkingJSONDecodable {}
 
 // MARK: - Venue
 
-struct DetailedVenue: Codable, DetailVenueContract {
+struct DetailedVenue: DetailVenueContract, Codable {
     let id, name: String
     let verified: Bool
     let stats: Stats
     let price: Price
-    let photos: Photos
     let createdAt: Int
     let bestPhoto: BestPhoto
 
     enum CodingKeys: String, CodingKey {
         case id, name
         case verified, stats, price
-        case photos, createdAt
+        case createdAt
         case bestPhoto
     }
 }
@@ -89,25 +90,6 @@ struct Followers: Codable {
 }
 
 extension Followers: NetworkingJSONDecodable {}
-
-// MARK: - Photos
-
-struct Photos: Codable {
-    let count: Int
-    let groups: [PhotosGroup]
-}
-
-extension Photos: NetworkingJSONDecodable {}
-
-// MARK: - PhotosGroup
-
-struct PhotosGroup: Codable {
-    let type, name: String
-    let count: Int
-    let items: [BestPhoto]
-}
-
-extension PhotosGroup: NetworkingJSONDecodable {}
 
 // MARK: - Price
 

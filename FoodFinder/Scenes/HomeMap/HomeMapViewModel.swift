@@ -24,8 +24,8 @@ final class HomeMapViewModel: ObservableObject {
     @Published var currentRegion: MKCoordinateRegion!
     @Published private(set) var state = HomeMapPageState.loading
     @Published var displayAlert = false
-    @Published var mapVenueAnnotations: [MapVenueAnnotable] = []
-    @Published var selectedVenue: MapVenueAnnotable?
+    @Published var mapVenueAnnotations: [MapVenueAnnotion] = []
+    @Published var selectedVenue: MapVenueAnnotion?
 
     @Injected private var locationRepository: LocationsRepositoryContract
     @Injected private var venueRepository: VenueRepositoryContract
@@ -44,8 +44,15 @@ final class HomeMapViewModel: ObservableObject {
         currentRegion = createRegion(with: currentLocation)
     }
 
-    func setSelectedVenue(for venue: MapVenueAnnotable) {
+    func setSelectedVenue(for venue: MapVenueAnnotion) {
         selectedVenue = venue
+        venueRepository.getDetails(ofType: DetailedVenue.self, for: selectedVenue!)
+            .compactMap { $0 }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] venue in
+                print(venue)
+            })
+            .store(in: &cancelBag)
     }
 
     func cleanSelection() {

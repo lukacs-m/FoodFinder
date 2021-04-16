@@ -43,6 +43,9 @@
 		B85FF9F22628F4F70035BDBD /* DetailVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9F12628F4F70035BDBD /* DetailVenue.swift */; };
 		B85FF9FD26297F920035BDBD /* UIStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9FC26297F920035BDBD /* UIStyles.swift */; };
 		B85FFA062629A8FE0035BDBD /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA052629A8FE0035BDBD /* Cache.swift */; };
+		B85FFA112629D53D0035BDBD /* VenueRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */; };
+		B85FFA162629D5E80035BDBD /* VenueAPIContractMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */; };
+		B85FFA1B2629F65E0035BDBD /* ModelsMockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		B85FF9F12628F4F70035BDBD /* DetailVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenue.swift; sourceTree = "<group>"; };
 		B85FF9FC26297F920035BDBD /* UIStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyles.swift; sourceTree = "<group>"; };
 		B85FFA052629A8FE0035BDBD /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepositoryTests.swift; sourceTree = "<group>"; };
+		B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIContractMock.swift; sourceTree = "<group>"; };
+		B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMockFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +331,8 @@
 			isa = PBXGroup;
 			children = (
 				B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */,
+				B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */,
+				B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -332,6 +340,7 @@
 		B85FF981262715900035BDBD /* RepositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */,
 			);
 			path = RepositoriesTests;
 			sourceTree = "<group>";
@@ -616,6 +625,9 @@
 			files = (
 				B85FF984262715DD0035BDBD /* HomeMapViewModelTests.swift in Sources */,
 				B85FF9722626EEFB0035BDBD /* XCTestCase+Extensions.swift in Sources */,
+				B85FFA162629D5E80035BDBD /* VenueAPIContractMock.swift in Sources */,
+				B85FFA1B2629F65E0035BDBD /* ModelsMockFactory.swift in Sources */,
+				B85FFA112629D53D0035BDBD /* VenueRepositoryTests.swift in Sources */,
 				B85FF99526271BA20035BDBD /* LocationRepositoryMock.swift in Sources */,
 				B85FF97D2626EF290035BDBD /* Resolver+XCTests.swift in Sources */,
 			);

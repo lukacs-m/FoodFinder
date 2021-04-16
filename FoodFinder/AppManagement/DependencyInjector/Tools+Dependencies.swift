@@ -15,6 +15,6 @@ extension Resolver {
         register { API() }
             .implements(VenueAPIContract.self)
             .scope(.application)
-        register { Cache<String, Any>() }
+        register { Cache<String, DetailVenueContract>() }.scope(.shared)
     }
 }
