@@ -46,6 +46,8 @@
 		B85FFA112629D53D0035BDBD /* VenueRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */; };
 		B85FFA162629D5E80035BDBD /* VenueAPIContractMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */; };
 		B85FFA1B2629F65E0035BDBD /* ModelsMockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */; };
+		B85FFA97262AE8420035BDBD /* DetailVenuePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */; };
+		B85FFA98262AE8420035BDBD /* DetailVenuePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepositoryTests.swift; sourceTree = "<group>"; };
 		B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIContractMock.swift; sourceTree = "<group>"; };
 		B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMockFactory.swift; sourceTree = "<group>"; };
+		B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenuePageView.swift; sourceTree = "<group>"; };
+		B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenuePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 		B85FF9332624B7300035BDBD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B85FFA9C262AE8EC0035BDBD /* DetailVenuePage */,
 				B85FF9342624B7920035BDBD /* HomeMap */,
 			);
 			path = Scenes;
@@ -407,6 +412,15 @@
 				B85FFA052629A8FE0035BDBD /* Cache.swift */,
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		B85FFA9C262AE8EC0035BDBD /* DetailVenuePage */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */,
+				B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */,
+			);
+			path = DetailVenuePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,7 +616,9 @@
 				B85FF91F2624B6B90035BDBD /* Routing+Dependencies.swift in Sources */,
 				B85FF9E126284EBC0035BDBD /* VenueTypeFactory.swift in Sources */,
 				B85FF946262591410035BDBD /* HomeMapView.swift in Sources */,
+				B85FFA97262AE8420035BDBD /* DetailVenuePageView.swift in Sources */,
 				B85FF9A9262736DA0035BDBD /* APIConfig.swift in Sources */,
+				B85FFA98262AE8420035BDBD /* DetailVenuePageViewModel.swift in Sources */,
 				B85FF9602625EEAC0035BDBD /* FoodFinderProgressView.swift in Sources */,
 				B85FF947262591410035BDBD /* HomeMapViewModel.swift in Sources */,
 				B85FF9A1262736B50035BDBD /* API.swift in Sources */,

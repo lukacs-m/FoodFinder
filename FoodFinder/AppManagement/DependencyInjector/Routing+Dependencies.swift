@@ -12,6 +12,8 @@ import Resolver
 
 extension Resolver {
     public static func registerRouting() {
-        // register your routing
+        register { MainRouter() }
+            .implements(RouteToPageContract.self)
+            .scope(.application)
     }
 }

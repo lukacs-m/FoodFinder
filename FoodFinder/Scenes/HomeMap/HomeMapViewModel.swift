@@ -25,8 +25,9 @@ final class HomeMapViewModel: ObservableObject {
     @Published private(set) var state = HomeMapPageState.loading
     @Published var displayAlert = false
     @Published var mapVenueAnnotations: [MapVenueAnnotion] = []
-    @Published var selectedVenue: MapVenueAnnotion?
+    private var selectedVenue: MapVenueAnnotion?
 
+    @Injected var router: RouteToPageContract
     @Injected private var locationRepository: LocationsRepositoryContract
     @Injected private var venueRepository: VenueRepositoryContract
 
@@ -46,13 +47,14 @@ final class HomeMapViewModel: ObservableObject {
 
     func setSelectedVenue(for venue: MapVenueAnnotion) {
         selectedVenue = venue
-        venueRepository.getDetails(ofType: DetailedVenue.self, for: selectedVenue!)
-            .compactMap { $0 }
-            .receive(on: DispatchQueue.main)
-            .sink(receiveValue: { [weak self] venue in
-                print(venue)
-            })
-            .store(in: &cancelBag)
+    }
+
+    func getSelectedVenueId() -> String {
+        selectedVenue?.id ?? ""
+    }
+
+    func getSelectedVenue() -> MapVenueAnnotion? {
+        selectedVenue
     }
 
     func cleanSelection() {

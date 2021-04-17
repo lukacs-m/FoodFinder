@@ -11,11 +11,13 @@
 import MapKit
 import Resolver
 import SwiftUI
+import SwiftUICombineToolBox
 
 struct HomeMapView: View {
     @InjectedObject private var viewModel: HomeMapViewModel
     @State private var rec = MKMapRect.world
     @State private var showOverlay = false
+    @State private var showDetailVenue = false
 
     var body: some View {
         mainContainerView
@@ -26,6 +28,9 @@ struct HomeMapView: View {
                     EmptyView().eraseToAnyView()
                 }
             })
+            .sheet(isPresented: $showDetailVenue) {
+                LazyView(viewModel.router.goToPage(for: .detailVenue(detailVenueId: viewModel.getSelectedVenueId())))
+            }
             .alert(isPresented: $viewModel.displayAlert, content: {
                 Alert(title: Text("Maps Permissions Denied"),
                       message: Text("Please enable map permission in App Settings"),
@@ -120,7 +125,7 @@ extension HomeMapView {
                 .ignoresSafeArea(.all, edges: .all)
 
             VStack(alignment: .leading, spacing: 15) {
-                Text(viewModel.selectedVenue?.name ?? "")
+                Text(viewModel.getSelectedVenue()?.name ?? "")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
@@ -128,12 +133,13 @@ extension HomeMapView {
                     Image(systemName: "magnifyingglass.circle")
                         .font(.body)
                         .clipShape(Circle())
-                    Text(viewModel.selectedVenue?.type ?? "")
+                    Text(viewModel.getSelectedVenue()?.type ?? "")
                 }
                 HStack {
                     Spacer()
                     Button(action: {
                         showOverlay = false
+                        showDetailVenue = true
                     }) {
                             Text("Want more details")
                     }.buttonStyle(LargeButtonStyle(backgroundColor: Color.black, foregroundColor: Color.white, isDisabled: false))
@@ -147,10 +153,10 @@ extension HomeMapView {
                     Spacer()
                 }
             }
-            .padding()
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 10)
+            .padding()
         }
     }
 }

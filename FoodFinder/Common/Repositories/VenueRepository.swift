@@ -17,7 +17,7 @@ protocol VenueRepositoryContract {
                                                         with radius: Int) -> AnyPublisher<[ReturnType], Never>
 
     func getDetails<ReturnType: DetailVenueContract>(ofType type: ReturnType.Type,
-                                                     for mapAnnotation: MapVenueAnnotion) -> AnyPublisher<ReturnType?, Never>
+                                                     with detailVenueId: String) -> AnyPublisher<ReturnType?, Never>
 }
 
 final class VenueRepository: VenueRepositoryContract {
@@ -47,12 +47,12 @@ final class VenueRepository: VenueRepositoryContract {
     }
 
     func getDetails<ReturnType: DetailVenueContract>(ofType type: ReturnType.Type,
-                                                     for mapAnnotation: MapVenueAnnotion) -> AnyPublisher<ReturnType?, Never> {
-        if let detailVenue = cache[mapAnnotation.id] as? ReturnType {
+                                                     with detailVenueId: String) -> AnyPublisher<ReturnType?, Never> {
+        if let detailVenue = cache[detailVenueId] as? ReturnType {
             return Just(detailVenue).eraseToAnyPublisher()
         }
         let params = APIConfig.basicParams
-        let path = "\(APIConfig.detailVenueEndpoint)/\(mapAnnotation.id)"
+        let path = "\(APIConfig.detailVenueEndpoint)/\(detailVenueId)"
 
         return api.getData(ofKind: DetailVenueAPIResponse.self, from: path, with: params)
             .map { [weak self] results -> ReturnType? in
@@ -60,7 +60,7 @@ final class VenueRepository: VenueRepositoryContract {
                       let detailVenue = self.parseDetail(from: results) as? ReturnType else {
                     return nil
                 }
-                self.cache[mapAnnotation.id] = detailVenue
+                self.cache[detailVenueId] = detailVenue
                 return detailVenue
             }.replaceError(with: nil)
             .eraseToAnyPublisher()

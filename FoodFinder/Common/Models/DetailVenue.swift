@@ -9,6 +9,10 @@ import Networking
 
 protocol DetailVenueContract {
     var id: String { get }
+    var name: String { get }
+    var price: Price { get }
+
+    func getBestPhotoUrlString() -> String
 }
 
 protocol DetailVenueProviderContract {
@@ -51,6 +55,10 @@ struct DetailedVenue: DetailVenueContract, Codable {
         case createdAt
         case bestPhoto
     }
+
+    func getBestPhotoUrlString() -> String {
+        "\(bestPhoto.prefix)350x350\(bestPhoto.suffix)"
+    }
 }
 
 extension DetailedVenue: NetworkingJSONDecodable {}
@@ -61,13 +69,13 @@ struct BestPhoto: Codable {
     let id: String
     let createdAt: Int
     let source: Source?
-    let bestPhotoPrefix: String
+    let prefix: String
     let suffix: String
     let width, height: Int
 
     enum CodingKeys: String, CodingKey {
         case id, createdAt, source
-        case bestPhotoPrefix = "prefix"
+        case prefix
         case suffix, width, height
     }
 }
