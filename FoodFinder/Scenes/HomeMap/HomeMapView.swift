@@ -14,9 +14,18 @@ import SwiftUI
 
 struct HomeMapView: View {
     @InjectedObject private var viewModel: HomeMapViewModel
+    @State private var rec = MKMapRect.world
+    @State private var showOverlay = false
 
     var body: some View {
         mainContainerView
+            .overlay(ZStack {
+                if showOverlay {
+                    venueOverlayDetails
+                } else {
+                    EmptyView().eraseToAnyView()
+                }
+            })
             .alert(isPresented: $viewModel.displayAlert, content: {
                 Alert(title: Text("Maps Permissions Denied"),
                       message: Text("Please enable map permission in App Settings"),
@@ -34,7 +43,11 @@ extension HomeMapView {
         Group {
             switch viewModel.state {
             case .loading:
-                FoodFinderProgressView()
+                ZStack {
+                    Map(mapRect: $rec)
+                        .ignoresSafeArea(.all, edges: .all)
+                    FoodFinderProgressView()
+                }
             case .localized:
                 ZStack {
                     map()
@@ -74,8 +87,71 @@ extension HomeMapView {
 
 extension HomeMapView {
     private func map() -> some View {
-        Map(coordinateRegion: $viewModel.currentRegion, showsUserLocation: true)
-            .ignoresSafeArea(.all, edges: .all)
+        Map(coordinateRegion: $viewModel.currentRegion,
+            showsUserLocation: true,
+            annotationItems: viewModel.mapVenueAnnotations) { venueAnnotation in
+                MapAnnotation(coordinate: venueAnnotation.coordinate) {
+                    Button(action: {
+                        viewModel.setSelectedVenue(for: venueAnnotation)
+                        showOverlay = true
+                    }) {
+                            VStack {
+                                Image(systemName: "mappin")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(5)
+                                    .foregroundColor(.red)
+                                    .font(.title)
+                                Text(venueAnnotation.name)
+                            }
+                    }
+                }
+        }
+        .ignoresSafeArea(.all, edges: .all)
+    }
+}
+
+extension HomeMapView {
+    private var venueOverlayDetails: some View {
+        ZStack {
+            Color.gray
+                .opacity(0.8)
+                .blur(radius: 3)
+                .ignoresSafeArea(.all, edges: .all)
+
+            VStack(alignment: .leading, spacing: 15) {
+                Text(viewModel.selectedVenue?.name ?? "")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                HStack {
+                    Image(systemName: "magnifyingglass.circle")
+                        .font(.body)
+                        .clipShape(Circle())
+                    Text(viewModel.selectedVenue?.type ?? "")
+                }
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        showOverlay = false
+                    }) {
+                            Text("Want more details")
+                    }.buttonStyle(LargeButtonStyle(backgroundColor: Color.black, foregroundColor: Color.white, isDisabled: false))
+
+                    Button(action: {
+                        showOverlay = false
+                        viewModel.cleanSelection()
+                    }) {
+                            Text("Had enough")
+                    }.buttonStyle(LargeButtonStyle(backgroundColor: Color.black, foregroundColor: Color.white, isDisabled: false))
+                    Spacer()
+                }
+            }
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: 10)
+        }
     }
 }
 

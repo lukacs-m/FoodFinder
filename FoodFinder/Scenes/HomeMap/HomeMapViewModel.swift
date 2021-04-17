@@ -24,8 +24,12 @@ final class HomeMapViewModel: ObservableObject {
     @Published var currentRegion: MKCoordinateRegion!
     @Published private(set) var state = HomeMapPageState.loading
     @Published var displayAlert = false
+    @Published var mapVenueAnnotations: [MapVenueAnnotion] = []
+    @Published var selectedVenue: MapVenueAnnotion?
 
     @Injected private var locationRepository: LocationsRepositoryContract
+    @Injected private var venueRepository: VenueRepositoryContract
+
     private var cancelBag = CancelBag()
     private var currentLocation: CLLocationCoordinate2D?
 
@@ -39,20 +43,39 @@ final class HomeMapViewModel: ObservableObject {
         }
         currentRegion = createRegion(with: currentLocation)
     }
+
+    func setSelectedVenue(for venue: MapVenueAnnotion) {
+        selectedVenue = venue
+        venueRepository.getDetails(ofType: DetailedVenue.self, for: selectedVenue!)
+            .compactMap { $0 }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] venue in
+                print(venue)
+            })
+            .store(in: &cancelBag)
+    }
+
+    func cleanSelection() {
+        selectedVenue = nil
+    }
 }
 
 extension HomeMapViewModel {
     private func setUp() {
         locationRepository.currentLocation
-            .receive(on: DispatchQueue.main)
-            .sink(receiveValue: { [weak self] location in
-                guard let self = self,
-                      let location = location else {
-                    return
+            .compactMap { $0 }
+            .flatMap { [weak self] location -> AnyPublisher<[BasicVenue], Never> in
+                guard let self = self else {
+                    return Just([]).eraseToAnyPublisher()
                 }
                 self.currentLocation = location
                 self.currentRegion = self.createRegion(with: location)
                 self.state = .localized
+                return self.venueRepository.getRecommended(ofType: BasicVenue.self, for: location, with: APIConfig.baseRadius)
+            }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] venues in
+                self?.mapVenueAnnotations = venues.map { VenueFactory.createMapVenueAnnotable(from: $0) }
             })
             .store(in: &cancelBag)
 
@@ -60,11 +83,40 @@ extension HomeMapViewModel {
             .receive(on: DispatchQueue.main)
             .assignNoRetain(to: \.displayAlert, on: self)
             .store(in: &cancelBag)
+
+        mapPanning
+            .compactMap { $0 }
+            .flatMap { [weak self] region -> AnyPublisher<[BasicVenue], Never> in
+                guard let self = self else {
+                    return Just([]).eraseToAnyPublisher()
+                }
+                return self.venueRepository.getRecommended(ofType: BasicVenue.self,
+                                                           for: region.center,
+                                                           with: Int(region.distanceMax()))
+            }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] venues in
+                self?.updateMapVenueAnnotations(with: venues)
+            })
+            .store(in: &cancelBag)
+    }
+
+    private var mapPanning: AnyPublisher<MKCoordinateRegion?, Never> {
+        $currentRegion
+            .debounce(for: 0.4, scheduler: RunLoop.main)
+            .eraseToAnyPublisher()
     }
 
     private func createRegion(with location: CLLocationCoordinate2D) -> MKCoordinateRegion {
         .init(center: location,
               latitudinalMeters: GeneralConfiguration.mapLatLongDistance,
               longitudinalMeters: GeneralConfiguration.mapLatLongDistance)
+    }
+
+    private func updateMapVenueAnnotations(with venues: [BasicVenueContract]) {
+        let newRestaurants = venues.map { VenueFactory.createMapVenueAnnotable(from: $0) }
+        var intermediate = mapVenueAnnotations
+        intermediate.append(contentsOf: newRestaurants)
+        mapVenueAnnotations = Array(Set(intermediate))
     }
 }
