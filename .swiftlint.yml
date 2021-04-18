@@ -13,7 +13,6 @@ opt_in_rules:
 - empty_string
 - explicit_init
 - operator_usage_whitespace
-- overridden_super_call
 - prohibited_super_call
 - redundant_nil_coalescing
 - sorted_first_last

@@ -12,6 +12,7 @@ import Resolver
 
 extension Resolver {
     public static func registerRepositories() {
-        // register you repositories
+        register { LocationsRepository() as LocationsRepositoryContract }.scope(.application)
+        register { VenueRepository() as VenueRepositoryContract }.scope(.application)
     }
 }

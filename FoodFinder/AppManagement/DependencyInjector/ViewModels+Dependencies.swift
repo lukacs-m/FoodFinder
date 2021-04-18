@@ -12,6 +12,7 @@ import Resolver
 
 extension Resolver {
     public static func registerViewModels() {
-        // register your view Model here
+        register { HomeMapViewModel() }.scope(.shared)
+        register { DetailVenuePageViewModel() }.scope(.shared)
     }
 }

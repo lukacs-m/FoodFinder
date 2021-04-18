@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B85FF8BC2624B1DF0035BDBD /* FoodFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8BB2624B1DF0035BDBD /* FoodFinderApp.swift */; };
-		B85FF8BE2624B1DF0035BDBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8BD2624B1DF0035BDBD /* ContentView.swift */; };
 		B85FF8C02624B1E00035BDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85FF8BF2624B1E00035BDBD /* Assets.xcassets */; };
 		B85FF8C32624B1E00035BDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85FF8C22624B1E00035BDBD /* Preview Assets.xcassets */; };
-		B85FF8CE2624B1E00035BDBD /* FoodFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8CD2624B1E00035BDBD /* FoodFinderTests.swift */; };
 		B85FF8D92624B1E00035BDBD /* FoodFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF8D82624B1E00035BDBD /* FoodFinderUITests.swift */; };
 		B85FF8F02624B54B0035BDBD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF8EF2624B54B0035BDBD /* Networking */; };
 		B85FF8F62624B5720035BDBD /* SwiftUICombineToolBox in Frameworks */ = {isa = PBXBuildFile; productRef = B85FF8F52624B5720035BDBD /* SwiftUICombineToolBox */; };
@@ -23,6 +21,33 @@
 		B85FF9212624B6B90035BDBD /* Repositories+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91C2624B6B90035BDBD /* Repositories+Dependencies.swift */; };
 		B85FF9222624B6B90035BDBD /* DependenciesRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF91D2624B6B90035BDBD /* DependenciesRegistration.swift */; };
 		B85FF92B2624B7000035BDBD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF92A2624B7000035BDBD /* MainRouter.swift */; };
+		B85FF93A2624BD720035BDBD /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9392624BD720035BDBD /* LocationRepository.swift */; };
+		B85FF946262591410035BDBD /* HomeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF944262591410035BDBD /* HomeMapView.swift */; };
+		B85FF947262591410035BDBD /* HomeMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF945262591410035BDBD /* HomeMapViewModel.swift */; };
+		B85FF9602625EEAC0035BDBD /* FoodFinderProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF95F2625EEAC0035BDBD /* FoodFinderProgressView.swift */; };
+		B85FF96926260B920035BDBD /* GeneralConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF96826260B920035BDBD /* GeneralConfiguration.swift */; };
+		B85FF9722626EEFB0035BDBD /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9712626EEFB0035BDBD /* XCTestCase+Extensions.swift */; };
+		B85FF97D2626EF290035BDBD /* Resolver+XCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF97C2626EF290035BDBD /* Resolver+XCTests.swift */; };
+		B85FF984262715DD0035BDBD /* HomeMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */; };
+		B85FF99526271BA20035BDBD /* LocationRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */; };
+		B85FF9A1262736B50035BDBD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9A0262736B50035BDBD /* API.swift */; };
+		B85FF9A9262736DA0035BDBD /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9A8262736DA0035BDBD /* APIConfig.swift */; };
+		B85FF9AE262738E50035BDBD /* FoodFinder-Infos.plist in Resources */ = {isa = PBXBuildFile; fileRef = B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */; };
+		B85FF9B32627629E0035BDBD /* VenueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9B22627629E0035BDBD /* VenueAPI.swift */; };
+		B85FF9B9262786C30035BDBD /* RecommandedVenueAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */; };
+		B85FF9C12627892B0035BDBD /* BasicVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9C02627892B0035BDBD /* BasicVenue.swift */; };
+		B85FF9C62627897E0035BDBD /* VenueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9C52627897E0035BDBD /* VenueRepository.swift */; };
+		B85FF9CF26284B040035BDBD /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */; };
+		B85FF9DB26284E6E0035BDBD /* MapVenueAnnotable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */; };
+		B85FF9E126284EBC0035BDBD /* VenueTypeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */; };
+		B85FF9F22628F4F70035BDBD /* DetailVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9F12628F4F70035BDBD /* DetailVenue.swift */; };
+		B85FF9FD26297F920035BDBD /* UIStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FF9FC26297F920035BDBD /* UIStyles.swift */; };
+		B85FFA062629A8FE0035BDBD /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA052629A8FE0035BDBD /* Cache.swift */; };
+		B85FFA112629D53D0035BDBD /* VenueRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */; };
+		B85FFA162629D5E80035BDBD /* VenueAPIContractMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */; };
+		B85FFA1B2629F65E0035BDBD /* ModelsMockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */; };
+		B85FFA97262AE8420035BDBD /* DetailVenuePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */; };
+		B85FFA98262AE8420035BDBD /* DetailVenuePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +70,10 @@
 /* Begin PBXFileReference section */
 		B85FF8B82624B1DF0035BDBD /* FoodFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85FF8BB2624B1DF0035BDBD /* FoodFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderApp.swift; sourceTree = "<group>"; };
-		B85FF8BD2624B1DF0035BDBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B85FF8BF2624B1E00035BDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85FF8C22624B1E00035BDBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B85FF8C42624B1E00035BDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85FF8C92624B1E00035BDBD /* FoodFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B85FF8CD2624B1E00035BDBD /* FoodFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderTests.swift; sourceTree = "<group>"; };
 		B85FF8CF2624B1E00035BDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85FF8D42624B1E00035BDBD /* FoodFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85FF8D82624B1E00035BDBD /* FoodFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderUITests.swift; sourceTree = "<group>"; };
@@ -61,6 +84,33 @@
 		B85FF91C2624B6B90035BDBD /* Repositories+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Dependencies.swift"; sourceTree = "<group>"; };
 		B85FF91D2624B6B90035BDBD /* DependenciesRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesRegistration.swift; sourceTree = "<group>"; };
 		B85FF92A2624B7000035BDBD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		B85FF9392624BD720035BDBD /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		B85FF944262591410035BDBD /* HomeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapView.swift; sourceTree = "<group>"; };
+		B85FF945262591410035BDBD /* HomeMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewModel.swift; sourceTree = "<group>"; };
+		B85FF95F2625EEAC0035BDBD /* FoodFinderProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderProgressView.swift; sourceTree = "<group>"; };
+		B85FF96826260B920035BDBD /* GeneralConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfiguration.swift; sourceTree = "<group>"; };
+		B85FF9712626EEFB0035BDBD /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		B85FF97C2626EF290035BDBD /* Resolver+XCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+XCTests.swift"; sourceTree = "<group>"; };
+		B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewModelTests.swift; sourceTree = "<group>"; };
+		B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryMock.swift; sourceTree = "<group>"; };
+		B85FF9A0262736B50035BDBD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B85FF9A8262736DA0035BDBD /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoodFinder-Infos.plist"; sourceTree = "<group>"; };
+		B85FF9B22627629E0035BDBD /* VenueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPI.swift; sourceTree = "<group>"; };
+		B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandedVenueAPIResponse.swift; sourceTree = "<group>"; };
+		B85FF9C02627892B0035BDBD /* BasicVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVenue.swift; sourceTree = "<group>"; };
+		B85FF9C52627897E0035BDBD /* VenueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepository.swift; sourceTree = "<group>"; };
+		B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVenueAnnotable.swift; sourceTree = "<group>"; };
+		B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTypeFactory.swift; sourceTree = "<group>"; };
+		B85FF9F12628F4F70035BDBD /* DetailVenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenue.swift; sourceTree = "<group>"; };
+		B85FF9FC26297F920035BDBD /* UIStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyles.swift; sourceTree = "<group>"; };
+		B85FFA052629A8FE0035BDBD /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRepositoryTests.swift; sourceTree = "<group>"; };
+		B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIContractMock.swift; sourceTree = "<group>"; };
+		B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMockFactory.swift; sourceTree = "<group>"; };
+		B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenuePageView.swift; sourceTree = "<group>"; };
+		B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVenuePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +184,9 @@
 		B85FF8CC2624B1E00035BDBD /* FoodFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				B85FF8CD2624B1E00035BDBD /* FoodFinderTests.swift */,
+				B85FF9822627159A0035BDBD /* ViewModelTests */,
+				B85FF981262715900035BDBD /* RepositoriesTests */,
+				B85FF96D2626EEA60035BDBD /* Tools */,
 				B85FF8CF2624B1E00035BDBD /* Info.plist */,
 			);
 			path = FoodFinderTests;
@@ -200,6 +252,12 @@
 		B85FF9322624B71E0035BDBD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B85FF9CD26284AEA0035BDBD /* Extensions */,
+				B85FF9B7262786A50035BDBD /* Models */,
+				B85FF99F262736A60035BDBD /* Tools */,
+				B85FF96726260B800035BDBD /* Configs */,
+				B85FF9532625EE530035BDBD /* UIComponent */,
+				B85FF9382624BD550035BDBD /* Repositories */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -207,6 +265,7 @@
 		B85FF9332624B7300035BDBD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B85FFA9C262AE8EC0035BDBD /* DetailVenuePage */,
 				B85FF9342624B7920035BDBD /* HomeMap */,
 			);
 			path = Scenes;
@@ -215,9 +274,153 @@
 		B85FF9342624B7920035BDBD /* HomeMap */ = {
 			isa = PBXGroup;
 			children = (
-				B85FF8BD2624B1DF0035BDBD /* ContentView.swift */,
+				B85FF944262591410035BDBD /* HomeMapView.swift */,
+				B85FF945262591410035BDBD /* HomeMapViewModel.swift */,
 			);
 			path = HomeMap;
+			sourceTree = "<group>";
+		};
+		B85FF9382624BD550035BDBD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9392624BD720035BDBD /* LocationRepository.swift */,
+				B85FF9C52627897E0035BDBD /* VenueRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B85FF9532625EE530035BDBD /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF95F2625EEAC0035BDBD /* FoodFinderProgressView.swift */,
+				B85FF9FC26297F920035BDBD /* UIStyles.swift */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		B85FF96726260B800035BDBD /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF96826260B920035BDBD /* GeneralConfiguration.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		B85FF96D2626EEA60035BDBD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9702626EED80035BDBD /* Mocks */,
+				B85FF96F2626EECA0035BDBD /* DependencyInjectorMock */,
+				B85FF96E2626EEBA0035BDBD /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B85FF96E2626EEBA0035BDBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9712626EEFB0035BDBD /* XCTestCase+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B85FF96F2626EECA0035BDBD /* DependencyInjectorMock */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF97C2626EF290035BDBD /* Resolver+XCTests.swift */,
+			);
+			path = DependencyInjectorMock;
+			sourceTree = "<group>";
+		};
+		B85FF9702626EED80035BDBD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF99426271BA20035BDBD /* LocationRepositoryMock.swift */,
+				B85FFA152629D5E80035BDBD /* VenueAPIContractMock.swift */,
+				B85FFA1A2629F65E0035BDBD /* ModelsMockFactory.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B85FF981262715900035BDBD /* RepositoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA102629D53D0035BDBD /* VenueRepositoryTests.swift */,
+			);
+			path = RepositoriesTests;
+			sourceTree = "<group>";
+		};
+		B85FF9822627159A0035BDBD /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF983262715DD0035BDBD /* HomeMapViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		B85FF99F262736A60035BDBD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA042629A8EF0035BDBD /* Cache */,
+				B85FF9DF26284E9F0035BDBD /* Factories */,
+				B85FF9D626284C160035BDBD /* API */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B85FF9B7262786A50035BDBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9B8262786C30035BDBD /* RecommandedVenueAPIResponse.swift */,
+				B85FF9C02627892B0035BDBD /* BasicVenue.swift */,
+				B85FF9DA26284E6E0035BDBD /* MapVenueAnnotable.swift */,
+				B85FF9F12628F4F70035BDBD /* DetailVenue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B85FF9CD26284AEA0035BDBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9CE26284B040035BDBD /* MKCoordinateRegion+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B85FF9D626284C160035BDBD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9A8262736DA0035BDBD /* APIConfig.swift */,
+				B85FF9AD262738E50035BDBD /* FoodFinder-Infos.plist */,
+				B85FF9B22627629E0035BDBD /* VenueAPI.swift */,
+				B85FF9A0262736B50035BDBD /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B85FF9DF26284E9F0035BDBD /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				B85FF9E026284EBC0035BDBD /* VenueTypeFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		B85FFA042629A8EF0035BDBD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA052629A8FE0035BDBD /* Cache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		B85FFA9C262AE8EC0035BDBD /* DetailVenuePage */ = {
+			isa = PBXGroup;
+			children = (
+				B85FFA95262AE8420035BDBD /* DetailVenuePageView.swift */,
+				B85FFA96262AE8420035BDBD /* DetailVenuePageViewModel.swift */,
+			);
+			path = DetailVenuePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +542,7 @@
 			files = (
 				B85FF8C32624B1E00035BDBD /* Preview Assets.xcassets in Resources */,
 				B85FF8C02624B1E00035BDBD /* Assets.xcassets in Resources */,
+				B85FF9AE262738E50035BDBD /* FoodFinder-Infos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,14 +606,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85FF8BE2624B1DF0035BDBD /* ContentView.swift in Sources */,
+				B85FF9DB26284E6E0035BDBD /* MapVenueAnnotable.swift in Sources */,
+				B85FF9F22628F4F70035BDBD /* DetailVenue.swift in Sources */,
 				B85FF92B2624B7000035BDBD /* MainRouter.swift in Sources */,
+				B85FF9C12627892B0035BDBD /* BasicVenue.swift in Sources */,
 				B85FF8BC2624B1DF0035BDBD /* FoodFinderApp.swift in Sources */,
+				B85FF93A2624BD720035BDBD /* LocationRepository.swift in Sources */,
 				B85FF91E2624B6B90035BDBD /* Tools+Dependencies.swift in Sources */,
 				B85FF91F2624B6B90035BDBD /* Routing+Dependencies.swift in Sources */,
+				B85FF9E126284EBC0035BDBD /* VenueTypeFactory.swift in Sources */,
+				B85FF946262591410035BDBD /* HomeMapView.swift in Sources */,
+				B85FFA97262AE8420035BDBD /* DetailVenuePageView.swift in Sources */,
+				B85FF9A9262736DA0035BDBD /* APIConfig.swift in Sources */,
+				B85FFA98262AE8420035BDBD /* DetailVenuePageViewModel.swift in Sources */,
+				B85FF9602625EEAC0035BDBD /* FoodFinderProgressView.swift in Sources */,
+				B85FF947262591410035BDBD /* HomeMapViewModel.swift in Sources */,
+				B85FF9A1262736B50035BDBD /* API.swift in Sources */,
+				B85FF9C62627897E0035BDBD /* VenueRepository.swift in Sources */,
+				B85FF9CF26284B040035BDBD /* MKCoordinateRegion+Extensions.swift in Sources */,
 				B85FF9212624B6B90035BDBD /* Repositories+Dependencies.swift in Sources */,
+				B85FF9B32627629E0035BDBD /* VenueAPI.swift in Sources */,
+				B85FF9FD26297F920035BDBD /* UIStyles.swift in Sources */,
+				B85FF9B9262786C30035BDBD /* RecommandedVenueAPIResponse.swift in Sources */,
+				B85FFA062629A8FE0035BDBD /* Cache.swift in Sources */,
 				B85FF9202624B6B90035BDBD /* ViewModels+Dependencies.swift in Sources */,
 				B85FF9222624B6B90035BDBD /* DependenciesRegistration.swift in Sources */,
+				B85FF96926260B920035BDBD /* GeneralConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +639,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85FF8CE2624B1E00035BDBD /* FoodFinderTests.swift in Sources */,
+				B85FF984262715DD0035BDBD /* HomeMapViewModelTests.swift in Sources */,
+				B85FF9722626EEFB0035BDBD /* XCTestCase+Extensions.swift in Sources */,
+				B85FFA162629D5E80035BDBD /* VenueAPIContractMock.swift in Sources */,
+				B85FFA1B2629F65E0035BDBD /* ModelsMockFactory.swift in Sources */,
+				B85FFA112629D53D0035BDBD /* VenueRepositoryTests.swift in Sources */,
+				B85FF99526271BA20035BDBD /* LocationRepositoryMock.swift in Sources */,
+				B85FF97D2626EF290035BDBD /* Resolver+XCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +796,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/App/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FoodFinder/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -589,6 +818,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodFinder/App/Preview Content\"";
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FoodFinder/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -609,6 +839,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				INFOPLIST_FILE = FoodFinderTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +861,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				INFOPLIST_FILE = FoodFinderTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,6 +882,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				INFOPLIST_FILE = FoodFinderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,6 +902,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WLGFZCD2AB;
 				INFOPLIST_FILE = FoodFinderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
