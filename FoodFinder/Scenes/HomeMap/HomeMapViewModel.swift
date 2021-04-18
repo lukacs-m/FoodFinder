@@ -15,18 +15,29 @@ import MapKit
 import Resolver
 import SwiftUICombineToolBox
 
+/// Simple page state managment protocol
+/// Helps to detemine the view state
 enum HomeMapPageState: Equatable {
     case loading
     case localized
 }
 
+/// ViewModel in charrge of display iof the mapkit and foursquare data fetching
 final class HomeMapViewModel: ObservableObject {
+    /// Current user location
     @Published var currentRegion: MKCoordinateRegion!
-    @Published private(set) var state = HomeMapPageState.loading
-    @Published var displayAlert = false
-    @Published var mapVenueAnnotations: [MapVenueAnnotion] = []
-    private var selectedVenue: MapVenueAnnotion?
 
+    /// State of the view
+    @Published private(set) var state = HomeMapPageState.loading
+
+    /// <#Description#>
+    @Published var displayAlert = false
+
+    /// Venue map Pin annotations
+    @Published var mapVenueAnnotations: [MapVenueAnnotation] = []
+    private var selectedVenue: MapVenueAnnotation?
+
+    /// Router enabling the detail view nivagation flow
     @Injected var router: RouteToPageContract
     @Injected private var locationRepository: LocationsRepositoryContract
     @Injected private var venueRepository: VenueRepositoryContract
@@ -38,6 +49,7 @@ final class HomeMapViewModel: ObservableObject {
         setUp()
     }
 
+    /// Helper function that recenters the map on the current user location
     func resetFocus() {
         guard let currentLocation = currentLocation else {
             return
@@ -45,18 +57,25 @@ final class HomeMapViewModel: ObservableObject {
         currentRegion = createRegion(with: currentLocation)
     }
 
-    func setSelectedVenue(for venue: MapVenueAnnotion) {
+    /// Set a map annotation to the Current selected venue
+    /// - Parameter venue: The mapVune annotation selected by the user
+    func setSelectedVenue(for venue: MapVenueAnnotation) {
         selectedVenue = venue
     }
 
+    /// Get id of current Selected venue
+    /// - Returns: Return the string id of the current selected venue
     func getSelectedVenueId() -> String {
         selectedVenue?.id ?? ""
     }
 
-    func getSelectedVenue() -> MapVenueAnnotion? {
+    /// Gtter function to accces selected venue
+    /// - Returns: The selected venue
+    func getSelectedVenue() -> MapVenueAnnotation? {
         selectedVenue
     }
 
+    /// Clean the viewModel selected venue
     func cleanSelection() {
         selectedVenue = nil
     }
