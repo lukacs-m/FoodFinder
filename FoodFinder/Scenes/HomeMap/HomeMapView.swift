@@ -13,6 +13,7 @@ import Resolver
 import SwiftUI
 import SwiftUICombineToolBox
 
+/// This scene presents a map with recommanded restaurants to a user
 struct HomeMapView: View {
     @InjectedObject private var viewModel: HomeMapViewModel
     @State private var rec = MKMapRect.world
@@ -48,17 +49,25 @@ extension HomeMapView {
         Group {
             switch viewModel.state {
             case .loading:
-                ZStack {
-                    Map(mapRect: $rec)
-                        .ignoresSafeArea(.all, edges: .all)
-                    FoodFinderProgressView()
-                }
+                loadingMap
             case .localized:
                 ZStack {
                     map()
                     recenterButton()
                 }
             }
+        }
+    }
+}
+
+// MARK: - Loading map state view
+
+extension HomeMapView {
+    private var loadingMap: some View {
+        ZStack {
+            Map(mapRect: $rec)
+                .ignoresSafeArea(.all, edges: .all)
+            FoodFinderProgressView()
         }
     }
 }
@@ -115,6 +124,8 @@ extension HomeMapView {
         .ignoresSafeArea(.all, edges: .all)
     }
 }
+
+// MARK: - Small overlay Venue details
 
 extension HomeMapView {
     private var venueOverlayDetails: some View {

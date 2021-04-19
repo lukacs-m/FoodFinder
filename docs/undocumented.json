@@ -1,0 +1,747 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/App/FoodFinderApp.swift",
+      "line": 13,
+      "symbol": "FoodFinderApp",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/DependencyInjector/DependenciesRegistration.swift",
+      "line": 14,
+      "symbol": "Resolver.registerAllServices()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/DependencyInjector/Repositories+Dependencies.swift",
+      "line": 14,
+      "symbol": "Resolver.registerRepositories()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/DependencyInjector/Routing+Dependencies.swift",
+      "line": 14,
+      "symbol": "Resolver.registerRouting()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/DependencyInjector/Tools+Dependencies.swift",
+      "line": 14,
+      "symbol": "Resolver.registerTools()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/DependencyInjector/ViewModels+Dependencies.swift",
+      "line": 14,
+      "symbol": "Resolver.registerViewModels()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/Routing/MainRouter.swift",
+      "line": 11,
+      "symbol": "PageDestinationType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/Routing/MainRouter.swift",
+      "line": 15,
+      "symbol": "RouteToPageContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/Routing/MainRouter.swift",
+      "line": 19,
+      "symbol": "MainRouter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/AppManagement/Routing/MainRouter.swift",
+      "line": 21,
+      "symbol": "MainRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Configs/GeneralConfiguration.swift",
+      "line": 8,
+      "symbol": "GeneralConfiguration",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Extensions/MKCoordinateRegion+Extensions.swift",
+      "line": 11,
+      "symbol": "MKCoordinateRegion.distanceMax()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 12,
+      "symbol": "BasicVenueContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 19,
+      "symbol": "BasicVenue",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 26,
+      "symbol": "BasicVenue",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 30,
+      "symbol": "Category",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 35,
+      "symbol": "Category",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 39,
+      "symbol": "Icon",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 49,
+      "symbol": "Icon",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 53,
+      "symbol": "Location",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 66,
+      "symbol": "Location",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 70,
+      "symbol": "VenuePage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/BasicVenue.swift",
+      "line": 74,
+      "symbol": "VenuePage",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 10,
+      "symbol": "DetailVenueContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 18,
+      "symbol": "DetailVenueProviderContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 24,
+      "symbol": "DetailVenueAPIResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 32,
+      "symbol": "DetailVenueAPIResponse",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 36,
+      "symbol": "DetailVenueResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 40,
+      "symbol": "DetailVenueResponse",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 44,
+      "symbol": "DetailedVenue",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 64,
+      "symbol": "DetailedVenue",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 68,
+      "symbol": "BestPhoto",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 83,
+      "symbol": "BestPhoto",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 87,
+      "symbol": "Source",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 92,
+      "symbol": "Source",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 96,
+      "symbol": "Followers",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 100,
+      "symbol": "Followers",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 104,
+      "symbol": "Price",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 109,
+      "symbol": "Price",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 113,
+      "symbol": "Stats",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/DetailVenue.swift",
+      "line": 117,
+      "symbol": "Stats",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/MapVenueAnnotable.swift",
+      "line": 11,
+      "symbol": "MapVenueAnnotation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 10,
+      "symbol": "BasicVenueProdiderContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 16,
+      "symbol": "RecommandedVenueAPIResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 26,
+      "symbol": "RecommandedVenueAPIResponse",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 30,
+      "symbol": "Response",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 35,
+      "symbol": "Response",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 39,
+      "symbol": "VenueGroups",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 44,
+      "symbol": "VenueGroups",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 48,
+      "symbol": "GroupItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Models/RecommandedVenueAPIResponse.swift",
+      "line": 52,
+      "symbol": "GroupItem",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/LocationRepository.swift",
+      "line": 12,
+      "symbol": "LocationsRepositoryContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/LocationRepository.swift",
+      "line": 19,
+      "symbol": "LocationsRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/LocationRepository.swift",
+      "line": 40,
+      "symbol": "LocationsRepository",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/LocationRepository.swift",
+      "line": 58,
+      "symbol": "LocationsRepository",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/VenueRepository.swift",
+      "line": 16,
+      "symbol": "VenueRepositoryContract.getRecommended(ofType:for:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/VenueRepository.swift",
+      "line": 20,
+      "symbol": "VenueRepositoryContract.getDetails(ofType:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/VenueRepository.swift",
+      "line": 24,
+      "symbol": "VenueRepository",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Repositories/VenueRepository.swift",
+      "line": 79,
+      "symbol": "VenueRepository",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/API.swift",
+      "line": 10,
+      "symbol": "API",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/API.swift",
+      "line": 17,
+      "symbol": "API",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/API.swift",
+      "line": 18,
+      "symbol": "API",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/APIConfig.swift",
+      "line": 11,
+      "symbol": "APIConfig",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/APIConfig.swift",
+      "line": 17,
+      "symbol": "APIConfig",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/APIConfig.swift",
+      "line": 24,
+      "symbol": "APIConfig",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/APIConfig.swift",
+      "line": 48,
+      "symbol": "APIConfig",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/API/VenueAPI.swift",
+      "line": 11,
+      "symbol": "VenueAPIContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 12,
+      "symbol": "CacheContract",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 22,
+      "symbol": "Cache",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 79,
+      "symbol": "Cache",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 95,
+      "symbol": "Cache",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 113,
+      "symbol": "Cache",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Cache/Cache.swift",
+      "line": 127,
+      "symbol": "Cache",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/Tools/Factories/VenueTypeFactory.swift",
+      "line": 10,
+      "symbol": "VenueFactory",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/UIComponent/FoodFinderProgressView.swift",
+      "line": 10,
+      "symbol": "FoodFinderProgressView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/UIComponent/FoodFinderProgressView.swift",
+      "line": 23,
+      "symbol": "FoodFinderProgressView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Common/UIComponent/UIStyles.swift",
+      "line": 10,
+      "symbol": "LargeButtonStyle",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageView.swift",
+      "line": 15,
+      "symbol": "DetailVenuePageView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageView.swift",
+      "line": 26,
+      "symbol": "DetailVenuePageView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageView.swift",
+      "line": 59,
+      "symbol": "DetailVenuePageView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageView.swift",
+      "line": 65,
+      "symbol": "DetailVenuePageView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageViewModel.swift",
+      "line": 16,
+      "symbol": "DetailVenuePageState",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageViewModel.swift",
+      "line": 22,
+      "symbol": "DetailVenuePageViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/DetailVenuePage/DetailVenuePageViewModel.swift",
+      "line": 56,
+      "symbol": "DetailVenuePageViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 18,
+      "symbol": "HomeMapView.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 19,
+      "symbol": "HomeMapView.rec",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 20,
+      "symbol": "HomeMapView.showOverlay",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 21,
+      "symbol": "HomeMapView.showDetailVenue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 48,
+      "symbol": "HomeMapView.mainContainerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 66,
+      "symbol": "HomeMapView.loadingMap",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 78,
+      "symbol": "HomeMapView.recenterButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 103,
+      "symbol": "HomeMapView.map()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 131,
+      "symbol": "HomeMapView.venueOverlayDetails",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapView.swift",
+      "line": 175,
+      "symbol": "HomeMapView_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 21,
+      "symbol": "HomeMapPageState.loading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 22,
+      "symbol": "HomeMapPageState.localized",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 38,
+      "symbol": "HomeMapViewModel.selectedVenue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 42,
+      "symbol": "HomeMapViewModel.locationRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 43,
+      "symbol": "HomeMapViewModel.venueRepository",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 45,
+      "symbol": "HomeMapViewModel.cancelBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 46,
+      "symbol": "HomeMapViewModel.currentLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 48,
+      "symbol": "HomeMapViewModel.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 85,
+      "symbol": "HomeMapViewModel.setUp()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 125,
+      "symbol": "HomeMapViewModel.mapPanning",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 131,
+      "symbol": "HomeMapViewModel.createRegion(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mlukacs/GithubProjects/FoodFinder/FoodFinder/Scenes/HomeMap/HomeMapViewModel.swift",
+      "line": 137,
+      "symbol": "HomeMapViewModel.updateMapVenueAnnotations(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mlukacs/GithubProjects/FoodFinder"
+}

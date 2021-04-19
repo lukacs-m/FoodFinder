@@ -1,0 +1,15 @@
+# Jazzy config
+clean: true
+
+module: FoodFinder
+build_tool_arguments: [-resolvePackageDependencies]
+min_acl: private
+
+title: FoodFinder documentation
+author: Martin
+
+theme: fullwidth
+readme: README.md
+
+hide_documentation_coverage: true
+skip_undocumented: true

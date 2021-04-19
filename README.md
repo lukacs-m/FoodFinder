@@ -28,6 +28,6 @@ The data is fetch using the foursquare api.
 * Routing to detail view
 * Some Caching
 * Example of ViewModel & repository testing(Combine publisher in mind)
-* very small jazzy generated documentation(foudn in doc folder)
+* Very small jazzy generated documentation(Can be found in the doc folder)
 
 Hope you enjoy the project.

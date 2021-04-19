@@ -8,7 +8,7 @@
 import CoreLocation
 import MapKit
 
-struct MapVenueAnnotion: Identifiable, Hashable {
+struct MapVenueAnnotation: Identifiable, Hashable {
     let id: String
     let name: String
     let type: String
@@ -19,7 +19,7 @@ struct MapVenueAnnotion: Identifiable, Hashable {
     }
 
     // swiftlint:disable operator_whitespace
-    static func ==(lhs: MapVenueAnnotion, rhs: MapVenueAnnotion) -> Bool {
+    static func ==(lhs: MapVenueAnnotation, rhs: MapVenueAnnotation) -> Bool {
         lhs.id == rhs.id
     }
     // swiftlint:enable operator_whitespace
