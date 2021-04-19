@@ -11,6 +11,7 @@ import Networking
 import Resolver
 import SwiftUICombineToolBox
 
+/// Protocol containing default declarationn for venu data fetchinng
 protocol VenueRepositoryContract {
     func getRecommended<ReturnType: BasicVenueContract>(ofType: ReturnType.Type,
                                                         for location: CLLocationCoordinate2D,
@@ -27,6 +28,14 @@ final class VenueRepository: VenueRepositoryContract {
 
     init() {}
 
+    /*
+        /// Fetch the data of recommanded venue
+        /// - Parameters:
+        ///   - ofType: Type of data to be returned
+        ///   - location: current user locationn
+        ///   - radius: radius of search
+        /// - Returns: returns an array of recommanded venues
+     */
     func getRecommended<ReturnType: BasicVenueContract>(ofType: ReturnType.Type,
                                                         for location: CLLocationCoordinate2D,
                                                         with radius: Int) -> AnyPublisher<[ReturnType], Never> {
